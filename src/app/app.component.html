@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<ngvas [width]="500" [height]="500" (ready)="onNgvasInit()">
+  <div *ngFor="let rect of rects">
+    <ngvas-rectangle [fill]="rect.color" [translate]="rect.xy" [width]="rect.w" [height]="rect.h"
+                     origin="center"></ngvas-rectangle>
+  </div>
+  <ngvas-circle [fill]="'#0000ff'" [x]="100" [y]="100" [radius]="50" origin="center" (click)="onClickHandler($event)"
+                [hitArea]="pixelHitArea"></ngvas-circle>
+</ngvas>
+
