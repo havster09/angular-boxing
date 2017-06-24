@@ -1,4 +1,4 @@
-import {Component, OnInit,} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { hitAreas } from 'ngvas';
 
 @Component({
@@ -21,7 +21,4 @@ export class AppComponent implements OnInit {
   onClickHandler(event) {
     console.log(event);
   }
-
-
-
 }
