@@ -11,15 +11,17 @@ export class AppComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    console.log('ngOnInit');
+  }
 
+  onNgvasInit() {
+    console.log('onNgvasInit');
   }
 
   onClickHandler(event) {
     console.log(event);
   }
 
-  onNgvasInit() {
-    console.log('onNgvasInit');
-  }
+
 
 }

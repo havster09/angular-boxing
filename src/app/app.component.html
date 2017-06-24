@@ -3,6 +3,9 @@
     <ngvas-rectangle [fill]="rect.color" [translate]="rect.xy" [width]="rect.w" [height]="rect.h"
                      origin="center"></ngvas-rectangle>
   </div>
+
+  <ngvas-image fill="rgba(0,0,0,0)" [x]="10" [y]="10" [width]="100" [height]="100" src="../assets/alien_0.png"></ngvas-image>
+
   <ngvas-circle [fill]="'#0000ff'" [x]="100" [y]="100" [radius]="50" origin="center" (click)="onClickHandler($event)"
                 [hitArea]="pixelHitArea"></ngvas-circle>
 </ngvas>
